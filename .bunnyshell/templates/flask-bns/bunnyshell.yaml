@@ -18,21 +18,10 @@ components:
                 CELERY_BROKER_URL: 'amqp://rabbitmq:rabbitmq@message-broker-service:5672/flask_base_dev'
                 DATABASE_TEST_URL: 'postgresql://postgres:postgres@flask-base-db:5432/flask_base_test'
                 DATABASE_URL: 'postgresql://postgres:postgres@flask-base-db:5432/flask_base_dev'
-                FCM_SERVER_KEY: '{{env.vars.FCM_SERVER_KEY}}'
                 FLASK_APP: project/__init__.py
                 FLASK_DEBUG: '1'
                 FLASK_ENV: docker
-                MAIL_DEFAULT_SENDER: '{{env.vars.MAIL_DEFAULT_SENDER}}'
-                MAIL_PASSWORD: '{{env.vars.MAIL_PASSWORD}}'
-                MAIL_PORT: '{{env.vars.MAIL_PORT}}'
-                MAIL_SERVER: '{{env.vars.MAIL_SERVER}}'
-                MAIL_USE_SSL: '{{env.vars.MAIL_USE_SSL}}'
-                MAIL_USE_TLS: '{{env.vars.MAIL_USE_TLS}}'
-                MAIL_USERNAME: '{{env.vars.MAIL_USERNAME}}'
-                SECRET_KEY: '{{env.vars.SECRET_KEY}}'
-                TWILIO_ACCOUNT_SID: '{{env.vars.TWILIO_ACCOUNT_SID}}'
-                TWILIO_AUTH_TOKEN: '{{env.vars.TWILIO_AUTH_TOKEN}}'
-                TWILIO_FROM_NUMBER: '{{env.vars.TWILIO_FROM_NUMBER}}'
+            
     -
         kind: Database
         name: flask-base-db
@@ -72,21 +61,11 @@ components:
                 CELERY_BROKER_URL: 'amqp://rabbitmq:rabbitmq@message-broker-service:5672/flask_base_dev'
                 DATABASE_TEST_URL: 'postgresql://postgres:postgres@flask-base-db:5432/flask_base_test'
                 DATABASE_URL: 'postgresql://postgres:postgres@flask-base-db:5432/flask_base_dev'
-                FCM_SERVER_KEY: '{{env.vars.FCM_SERVER_KEY}}'
+             
                 FLASK_APP: project/__init__.py
                 FLASK_DEBUG: '1'
                 FLASK_ENV: docker
-                MAIL_DEFAULT_SENDER: '{{env.vars.MAIL_DEFAULT_SENDER}}'
-                MAIL_PASSWORD: '{{env.vars.MAIL_PASSWORD}}'
-                MAIL_PORT: '{{env.vars.MAIL_PORT}}'
-                MAIL_SERVER: '{{env.vars.MAIL_SERVER}}'
-                MAIL_USE_SSL: '{{env.vars.MAIL_USE_SSL}}'
-                MAIL_USE_TLS: '{{env.vars.MAIL_USE_TLS}}'
-                MAIL_USERNAME: '{{env.vars.MAIL_USERNAME}}'
-                SECRET_KEY: '{{env.vars.SECRET_KEY}}'
-                TWILIO_ACCOUNT_SID: '{{env.vars.TWILIO_ACCOUNT_SID}}'
-                TWILIO_AUTH_TOKEN: '{{env.vars.TWILIO_AUTH_TOKEN}}'
-                TWILIO_FROM_NUMBER: '{{env.vars.TWILIO_FROM_NUMBER}}'
+               
             ports:
                 - '5001:5000'
         hosts:
