@@ -12,9 +12,7 @@ icons: [ 'flask', 'postgres']
 stack:
   packages:
     - name: Flask
-      version: 'latest'
-    - name: Swagger
-      version: 'x'
+      version: '2.0.1'
     - name: PostgreSQL
-      version: 'latest'
+      version: '12.2'
 discoverable: true
