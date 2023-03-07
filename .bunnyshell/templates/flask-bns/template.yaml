@@ -1,0 +1,20 @@
+name: Flask API + Swagger + RabbitMQ + Redis + Twillio + Celery + PostgreSQL
+description: This is a fully armored Flask API with a message broker, JWT auth, Swagger API, Redis and Celery worker.
+tags:
+   - flask
+   - swagger
+   - redis
+   - postgres
+   - rabbitmq
+   - twillio 
+   - celery
+icons: [ 'flask', 'postgres']
+stack:
+  packages:
+    - name: Flask
+      version: 'latest'
+    - name: Swagger
+      version: 'x'
+    - name: PostgreSQL
+      version: 'latest'
+discoverable: true
