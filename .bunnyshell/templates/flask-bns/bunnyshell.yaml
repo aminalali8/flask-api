@@ -1,21 +1,6 @@
 kind: Environment
 name: Flask-FullStack-API-Draft
 type: primary
-environmentVariables:
-    APP_SETTINGS: project.config.DevelopmentConfig
-    CELLPHONE_VALIDATION_CODE_EXP_SECS: '600'
-    FCM_SERVER_KEY: '<<BNS_SECRET>>'
-    MAIL_DEFAULT_SENDER: my_email@my_email_domain.com
-    MAIL_PASSWORD: '<<BNS_SECRET>>'
-    MAIL_PORT: '465'
-    MAIL_SERVER: smtp.googlemail.com
-    MAIL_USE_SSL: 'True'
-    MAIL_USE_TLS: 'False'
-    MAIL_USERNAME: my_email@my_email_domain.com
-    SECRET_KEY: '<<BNS_SECRET>>'
-    TWILIO_ACCOUNT_SID: '<<BNS_SECRET>>'
-    TWILIO_AUTH_TOKEN: '<<BNS_SECRET>>'
-    TWILIO_FROM_NUMBER: '<<BNS_SECRET>>'
 components:
     -
         kind: Application
