@@ -1,0 +1,14 @@
+name: Docker CLI Tool
+on:
+  push:
+    branches:
+      - main
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Test environment
+        run: |
+          curl -s https://flask-base-service-ct62ih.bunnyenv.com/v1/ping | jq '.message' | grep -q 'pong!' && echo 'Service is up!' || echo 'Somethings wrong!' 
